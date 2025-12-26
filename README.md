@@ -17,7 +17,7 @@
 
 * Keep a class called `Application` or `Game` that can be used in as a central point
 * Reserve class inheritance only when it makes code cleaner, favour composition rather than inheritance in most instances
-* Use structs rather than classes when OOP features are infavourable or for prototyping when verbosity impedes efficiency
+* Use structs rather than classes when OOP features are infavourable or for prototyping when verbosity slows down efficiency
 * Use classes rather than structs when OOP features are required and when scalability is necessary
 * Always use delta time for movement related code to ensure frame-independent results
 * Prefer using flags (members of objects) for state management and use assertions to prevent silent errors
