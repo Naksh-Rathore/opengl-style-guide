@@ -1,6 +1,4 @@
-# OpenGL Style & Debug Guide
-
-## Styling
+# OpenGL Style Guide
 
 ## Naming
 
@@ -23,6 +21,24 @@
 * Prefer using flags (members of objects) for state management and use assertions to prevent silent errors
 * Always design code in a way that checks for invariance with assertions and error handling
 * Never expose anything to an object's owner if it is not needed, and when it is needed use constant reference getters and setters
+*  Use a MVC-style design pattern but do not strictly adhere to it at all times
+* Have OpenGL calls at the lowest level possible
+
+## Project Structure
+
+* Have an `Application` or `Game` class that dicates flow.
+* Have a `World` and `Renderer` class which choose what and how to render and actually render it respectively.
+* Have a `Renderable` class that has a `Mesh`, `Material` (`Shader` and `Texture`) 
+* Have a `Entity` class which game logic members `Transform` class (model matrix). It should not care about being rendered, the `Scene` object does that
+
+## Basic flow
+
+1. `Game` object initializes and sets up everything
+2. `Game` object tells the `Scene` object to pass all rendered objects that frame to the renderer (in a compacted way)
+3. `Scene` object iterates over every entity and checks if it should be rendered.
+4. Rendered objects get passed (in a compacted format) to the renderer.
+5. The renderer renders all objects to the screen.
+6. Repeat
 
 ## Optimizations
 
@@ -30,5 +46,3 @@
 * Use a VAO and VBO per object if geometry is vastly different, use a mesh and model matrices if geometry is mostly the same
 * Use EBOs whenever it is available and will make performance and code better
 * Avoid `std::cout` anything per frame anytime other than debugging (but use sparingly, even for debugging) because it is unperformant and overflows terminal with characters
-
-## Debugging
