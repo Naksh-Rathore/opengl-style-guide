@@ -43,6 +43,6 @@
 ## Optimizations
 
 * Avoid set uniforms every frame if you do not have to, set them only once if you can
-* Use a VAO and VBO per object if geometry is vastly different, use a mesh and model matrices if geometry is mostly the same
+* Use separate VAOs/VBOs per mesh if geometry is vastly different and share meshes and use model matrices when geometry is mostly the same.
 * Use EBOs whenever it is available and will make performance and code better
 * Avoid `std::cout` anything per frame anytime other than debugging (but use sparingly, even for debugging) because it is unperformant and overflows terminal with characters
