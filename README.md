@@ -20,7 +20,7 @@
 * Prefer using flags of a boolean or enumeration type (members of objects) for state management and use assertions to prevent silent errors
 * Always design code in a way that checks for invariance with assertions and error handling
 * Never expose anything to an object's owner if it is not needed, and when it is needed use constant reference getters and setters
-*  Use a MVC-style design pattern but do not strictly adhere to it at all times
+*  Use a MVC-inspired design pattern but do not follow the textbook pattern, adapt it for computer graphics
 * Have OpenGL calls at the lowest level possible
 
 ## Project Structure
