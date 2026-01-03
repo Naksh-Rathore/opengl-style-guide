@@ -28,7 +28,7 @@
 * Have an `Application` or `Game` class that dicates flow.
 * Have a `World` and `Renderer` class which choose what and how to render and actually render it respectively.
 * Have a `Renderable` class that has a `Mesh`, `Material` (`Shader` and `Texture`) 
-* Have a `Entity` class which game logic members `Transform` class (model matrix). It should not care about being rendered, the `Scene` object does that
+* Have an `Entity` class which contains game logic members and a `Transform` class (model matrix). It should not care about being rendered, the `Scene` object does that
 
 ## Basic flow
 
