@@ -18,7 +18,7 @@
 * Use structs rather than classes when OOP features are infavourable or for prototyping when verbosity slows down efficiency
 * Use classes rather than structs when OOP features are required and when scalability is necessary
 * Always use delta time for movement related code to ensure frame-independent results
-* Prefer using flags (members of objects) for state management and use assertions to prevent silent errors
+* Prefer using flags of a boolean or enumeration type (members of objects) for state management and use assertions to prevent silent errors
 * Always design code in a way that checks for invariance with assertions and error handling
 * Never expose anything to an object's owner if it is not needed, and when it is needed use constant reference getters and setters
 *  Use a MVC-style design pattern but do not strictly adhere to it at all times
