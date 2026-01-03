@@ -29,6 +29,7 @@
 * Have a `World` and `Renderer` class which choose what and how to render and actually render it respectively.
 * Have a `Renderable` class that has a `Mesh`, `Material` (`Shader` and `Texture`) 
 * Have an `Entity` class which contains game logic members and a `Transform` class (model matrix). It should not care about being rendered, the `Scene` object does that
+* The renderer must never query entities, the world, or game state directly, it blindly consumes render commands.
 
 ## Basic flow
 
