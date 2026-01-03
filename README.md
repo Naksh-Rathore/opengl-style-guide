@@ -6,7 +6,6 @@
 * For functions which link the shader program, prefer names like `linkShaderProgram()`
 * For functions which compile individual shaders, prefer names like `compileShader()`
 * Always namespace classes and functions to the folder they are in, for example `collision/aabb2d.h` would have it's functions in `Collision::` namespace
-* Make all files and folders singular
 * For any other function name, use descriptive names
 * For member variables, use the `m_` prefix.
 * Use `std::` for standard functions when possible, avoid not using the prefix such as `std::abs()` vs `abs()`
