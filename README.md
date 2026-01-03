@@ -33,8 +33,8 @@
 ## Basic flow
 
 1. `Game` object initializes and sets up everything
-2. `Game` object tells the `Scene` object to pass all rendered objects that frame to the renderer (in a compacted way)
-3. `Scene` object iterates over every entity and checks if it should be rendered.
+2. `Game` object tells the `World` object to pass all rendered objects that frame to the renderer (in a compacted way)
+3. `World` object iterates over every entity and checks if it should be rendered.
 4. Rendered objects get passed (in a compacted format) to the renderer.
 5. The renderer renders all objects to the screen.
 6. Repeat
