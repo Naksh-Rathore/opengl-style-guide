@@ -1,5 +1,9 @@
 # OpenGL Style Guide
 
+## Key Guide
+
+**"Keep things as high level as possible for the caller, and keep it lower level the more layers come"**
+
 ## Naming
 
 * For functions which upload the data from the CPU to GPU, prefer names like `uploadData()`.
