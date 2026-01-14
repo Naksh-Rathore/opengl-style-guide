@@ -1,8 +1,9 @@
 # OpenGL Style Guide
 
-## Key Guide
+## Key Guides
 
 **"Keep things as high level as possible for the caller, and keep it lower level the more layers come"**
+**"Decisions flow upwards, data flows downwards"**
 
 ## Naming
 
